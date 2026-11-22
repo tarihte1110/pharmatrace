@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "farmaiz-pipelines"
+version = "0.1.0"
+description = "Document ingestion and indexing pipelines for Farmaiz."
+requires-python = ">=3.12"
+dependencies = []
