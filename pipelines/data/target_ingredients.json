@@ -1,0 +1,54 @@
+[
+  {"etken_madde": "PARASETAMOL", "kategori": "Ağrı Kesici / Ateş Düşürücü"},
+  {"etken_madde": "İBUPROFEN", "kategori": "NSAİİ"},
+  {"etken_madde": "FLURBİPROFEN", "kategori": "NSAİİ"},
+  {"etken_madde": "DEKSKETOPROFEN", "kategori": "NSAİİ"},
+  {"etken_madde": "NAPROKSEN", "kategori": "NSAİİ"},
+  {"etken_madde": "DİKLOFENAK", "kategori": "NSAİİ"},
+  {"etken_madde": "ETODOLAK", "kategori": "NSAİİ"},
+  {"etken_madde": "MELOKSİKAM", "kategori": "NSAİİ"},
+
+  {"etken_madde": "ASETİLSALİSİLİK ASİT", "kategori": "Kan Sulandırıcı"},
+  {"etken_madde": "KLOPİDOGREL", "kategori": "Kan Sulandırıcı"},
+  {"etken_madde": "VARFARİN", "kategori": "Kan Sulandırıcı"},
+  {"etken_madde": "RİVAROKSABAN", "kategori": "Kan Sulandırıcı"},
+  {"etken_madde": "APİKSABAN", "kategori": "Kan Sulandırıcı"},
+
+  {"etken_madde": "AMOKSİSİLİN", "kategori": "Antibiyotik"},
+  {"etken_madde": "SİPROFLOKSASİN", "kategori": "Antibiyotik"},
+  {"etken_madde": "AZİTROMİSİN", "kategori": "Antibiyotik"},
+  {"etken_madde": "KLARİTROMİSİN", "kategori": "Antibiyotik"},
+  {"etken_madde": "SEFUROKSİM", "kategori": "Antibiyotik"},
+  {"etken_madde": "DOKSİSİKLİN", "kategori": "Antibiyotik"},
+  {"etken_madde": "LEVOFLOKSASİN", "kategori": "Antibiyotik"},
+  {"etken_madde": "METRONİDAZOL", "kategori": "Antibiyotik"},
+
+  {"etken_madde": "ESOMEPRAZOL", "kategori": "Mide Koruyucu (PPI)"},
+  {"etken_madde": "LANSOPRAZOL", "kategori": "Mide Koruyucu (PPI)"},
+  {"etken_madde": "PANTOPRAZOL", "kategori": "Mide Koruyucu (PPI)"},
+  {"etken_madde": "FAMOTİDİN", "kategori": "H2 Reseptör Blokeri"},
+
+  {"etken_madde": "METOPROLOL", "kategori": "Beta Bloker / Tansiyon"},
+  {"etken_madde": "KARVEDİLOL", "kategori": "Beta Bloker / Tansiyon"},
+  {"etken_madde": "RAMİPRİL", "kategori": "ACE İnhibitörü / Tansiyon"},
+  {"etken_madde": "AMLODİPİN", "kategori": "Kalsiyum Kanal Blokeri"},
+  {"etken_madde": "VALSARTAN", "kategori": "ARB / Tansiyon"},
+  {"etken_madde": "FUROSEMİD", "kategori": "Diüretik"},
+  {"etken_madde": "ATORVASTATİN", "kategori": "Kolesterol (Statin)"},
+  {"etken_madde": "ROSUVASTATİN", "kategori": "Kolesterol (Statin)"},
+
+  {"etken_madde": "METFORMİN", "kategori": "Antidiyabetik"},
+  {"etken_madde": "GLİKLAZİD", "kategori": "Antidiyabetik"},
+  {"etken_madde": "SİTAGLİPTİN", "kategori": "Antidiyabetik"},
+  {"etken_madde": "LEVOTİROKSİN", "kategori": "Tiroid Hormonu"},
+
+  {"etken_madde": "SETİRİZİN", "kategori": "Antihistaminik"},
+  {"etken_madde": "DESLORATADİN", "kategori": "Antihistaminik"},
+  {"etken_madde": "MONTELUKAST", "kategori": "Astım / Alerji"},
+
+  {"etken_madde": "ESSİTALOPRAM", "kategori": "Antidepresan (SSRI)"},
+  {"etken_madde": "SERTRALİN", "kategori": "Antidepresan (SSRI)"},
+  {"etken_madde": "FLUOKSETİN", "kategori": "Antidepresan (SSRI)"},
+  {"etken_madde": "VENLAFAKSİN", "kategori": "Antidepresan (SNRI)"},
+  {"etken_madde": "PREGABALİN", "kategori": "Nöropatik Ağrı / Antiepileptik"}
+]
