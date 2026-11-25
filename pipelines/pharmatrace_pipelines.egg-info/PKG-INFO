@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: pharmatrace-pipelines
+Version: 0.1.0
+Summary: PharmaTrace ETL ve prospektüs veri işleme boru hattı
+Requires-Python: >=3.11
+Requires-Dist: httpx>=0.27.0
+Requires-Dist: playwright>=1.48.0
+Requires-Dist: pymupdf>=1.24.0
+Requires-Dist: docling>=2.0.0
+Requires-Dist: qdrant-client>=1.12.0
+Requires-Dist: sentence-transformers>=3.2.0
+Requires-Dist: pydantic>=2.9.0
+Requires-Dist: rich>=13.9.0
