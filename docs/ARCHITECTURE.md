@@ -1,6 +1,6 @@
 # Architecture
 
-Farmaiz is organized as a React frontend, a FastAPI backend, and separate
+PharmaTrace is organized as a React frontend, a FastAPI backend, and separate
 document-ingestion pipelines. The intended request flow is:
 
 1. The frontend sends a question to the backend.

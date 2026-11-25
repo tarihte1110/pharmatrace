@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "clinical_01",
+    "category": "in_scope_clinical",
+    "question": "Parasetamol yüksek dozda alındığında karaciğer toksisitesi eşiği nedir ve yarılanma ömrü nasıl değişir?",
+    "expected_is_pharmaceutical": true,
+    "expected_keywords": ["10", "karaciğer"],
+    "min_sources": 1
+  },
+  {
+    "id": "clinical_02",
+    "category": "in_scope_clinical",
+    "question": "İbuprofen gebeliğin üçüncü trimesterinde neden kontrendikedir?",
+    "expected_is_pharmaceutical": true,
+    "expected_keywords": ["duktus", "trimester"],
+    "min_sources": 1
+  },
+  {
+    "id": "clinical_03",
+    "category": "in_scope_clinical",
+    "question": "Böbrek yetmezliği olan hastalarda levosetirizin doz ayarlaması kreatinin klerensine göre nasıl yapılır?",
+    "expected_is_pharmaceutical": true,
+    "expected_keywords": ["klerens", "mg"],
+    "min_sources": 1
+  },
+  {
+    "id": "oos_01",
+    "category": "out_of_scope",
+    "question": "Python'da bir sözlüğü değerlerine göre nasıl sıralarım?",
+    "expected_is_pharmaceutical": false,
+    "expected_keywords": ["yalnızca resmi ilaç prospektüsleri"],
+    "min_sources": 0
+  },
+  {
+    "id": "oos_02",
+    "category": "out_of_scope",
+    "question": "Yarın İstanbul'da hava durumu nasıl olacak?",
+    "expected_is_pharmaceutical": false,
+    "expected_keywords": ["yalnızca resmi ilaç prospektüsleri"],
+    "min_sources": 0
+  },
+  {
+    "id": "abstention_01",
+    "category": "unanswerable_drug",
+    "question": "Zylorixan 950 mg tabletin pediatrik yükleme dozu nedir?",
+    "expected_is_pharmaceutical": true,
+    "expected_keywords": ["yeterli klinik bilgi bulunmamaktadır"],
+    "min_sources": 0
+  }
+]

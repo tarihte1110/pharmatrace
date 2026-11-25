@@ -6,6 +6,7 @@ class ChatRequest(BaseModel):
     question: str = Field(..., min_length=2, max_length=1000, description="Kullanıcının ilaç/prospektüs sorusu")
     ilac_filtresi: str | None = Field(default=None, description="Opsiyonel tam ilaç adı filtresi")
     etken_madde_filtresi: str | None = Field(default=None, description="Opsiyonel etken madde filtresi")
+    dokuman_tipi: str | None = Field(default=None, description="Opsiyonel belge tipi filtresi (KUB/KT)")
 
 
 class SourceCitation(BaseModel):
@@ -15,6 +16,7 @@ class SourceCitation(BaseModel):
     dokuman_tipi: str
     score: float
     excerpt: str
+    full_text: str | None = None
 
 
 class ChatResponse(BaseModel):

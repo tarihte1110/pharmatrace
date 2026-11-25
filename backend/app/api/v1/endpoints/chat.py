@@ -10,11 +10,12 @@ from app.schemas.interaction import ChatRequest, ChatResponse, SourceCitation
 router = APIRouter()
 redis_client = redis.Redis.from_url(settings.REDIS_URL, decode_responses=True)
 CACHE_TTL_SECONDS = 60 * 60 * 24  # 24 saat
+CACHE_KEY_PREFIX = "pharmatrace:chat:v2:"
 
 
 def _make_cache_key(req: ChatRequest) -> str:
-    raw = f"{req.question.strip().lower()}|{req.ilac_filtresi or ''}|{req.etken_madde_filtresi or ''}"
-    return "pharmatrace:chat:" + hashlib.sha256(raw.encode("utf-8")).hexdigest()
+    raw = f"{req.question.strip().lower()}|{req.ilac_filtresi or ''}|{req.etken_madde_filtresi or ''}|{req.dokuman_tipi or ''}"
+    return CACHE_KEY_PREFIX + hashlib.sha256(raw.encode("utf-8")).hexdigest()
 
 
 @router.post("/chat", response_model=ChatResponse)
@@ -34,6 +35,7 @@ def ask_prospectus(request: ChatRequest) -> ChatResponse:
             "question": request.question,
             "ilac_filtresi": request.ilac_filtresi,
             "etken_madde_filtresi": request.etken_madde_filtresi,
+            "dokuman_tipi": request.dokuman_tipi,
             "is_pharmaceutical": True,
             "contexts": [],
             "answer": "",
@@ -48,6 +50,7 @@ def ask_prospectus(request: ChatRequest) -> ChatResponse:
             dokuman_tipi=ctx["dokuman_tipi"],
             score=ctx["score"],
             excerpt=ctx["text"][:280] + ("..." if len(ctx["text"]) > 280 else ""),
+            full_text=ctx["text"],
         )
         for ctx in result.get("contexts", [])
     ]

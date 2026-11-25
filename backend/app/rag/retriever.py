@@ -22,6 +22,7 @@ class PharmaRetriever:
         top_k: int = settings.TOP_K_RESULTS,
         ilac_filtresi: str | None = None,
         etken_madde_filtresi: str | None = None,
+        dokuman_tipi: str | None = None,
     ) -> list[dict]:
         dense_vec = next(self.dense_model.embed([f"query: {query}"])).tolist()
         sparse_raw = next(self.sparse_model.embed([query]))
@@ -38,6 +39,10 @@ class PharmaRetriever:
         if etken_madde_filtresi:
             must_conditions.append(
                 models.FieldCondition(key="etken_maddeler", match=models.MatchValue(value=etken_madde_filtresi))
+            )
+        if dokuman_tipi:
+            must_conditions.append(
+                models.FieldCondition(key="dokuman_tipi", match=models.MatchValue(value=dokuman_tipi))
             )
 
         query_filter = models.Filter(must=must_conditions) if must_conditions else None

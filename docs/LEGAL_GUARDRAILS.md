@@ -1,6 +1,6 @@
 # Legal and medical safety guardrails
 
-Farmaiz is intended to provide source-grounded medication information, not
+PharmaTrace is intended to provide source-grounded medication information, not
 diagnosis, prescribing, or a substitute for advice from a qualified healthcare
 professional. Responses must cite authoritative sources and communicate
 uncertainty. Emergency situations must be directed to local emergency services.

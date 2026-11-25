@@ -16,6 +16,7 @@ class RAGState(TypedDict):
     question: str
     ilac_filtresi: str | None
     etken_madde_filtresi: str | None
+    dokuman_tipi: str | None
     is_pharmaceutical: bool
     contexts: list[dict]
     answer: str
@@ -28,7 +29,7 @@ generator_llm = ChatOpenAI(
     api_key=settings.DEEPSEEK_API_KEY,
     base_url=settings.DEEPSEEK_BASE_URL,
     temperature=0.0,
-    max_tokens=650,
+    max_tokens=1400,
 )
 
 
@@ -44,6 +45,7 @@ def retrieve_node(state: RAGState) -> dict:
         query=state["question"],
         ilac_filtresi=state.get("ilac_filtresi"),
         etken_madde_filtresi=state.get("etken_madde_filtresi"),
+        dokuman_tipi=state.get("dokuman_tipi"),
     )
     return {"contexts": docs}
 
